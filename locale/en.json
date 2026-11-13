@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Team switch on top",
+    "description": "The Agent Teams switch moves to the top of the composer's model menu, so a stray click no longer turns the team on. Zero cost: no extra tokens, UI only. One Tab still lands on the original Reasoning row.",
+    "detail": "DETAIL.md"
+  }
+}
