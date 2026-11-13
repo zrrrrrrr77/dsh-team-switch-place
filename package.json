@@ -1,0 +1,47 @@
+{
+  "name": "dsh-team-switch-place",
+  "version": "0.1.0",
+  "description": "Put the Agent Teams switch above the model and reasoning rows in the DSH composer model menu.",
+  "type": "module",
+  "license": "MIT",
+  "author": "zrrrrrrr77",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrrrrrrr77/dsh-team-switch-place.git"
+  },
+  "homepage": "https://github.com/zrrrrrrr77/dsh-team-switch-place#readme",
+  "bugs": {
+    "url": "https://github.com/zrrrrrrr77/dsh-team-switch-place/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "DETAIL.md",
+    "DETAIL.zh.md",
+    "preview.png",
+    "icon.svg",
+    "README.md",
+    "README.zh.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "keywords": ["dsh-plugin", "dsh", "deepseek-harness", "ui", "agent-teams"]
+}
